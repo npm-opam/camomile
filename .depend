@@ -1,0 +1,300 @@
+camomileDefaultConfig.cmo :
+camomileDefaultConfig.cmx :
+camomileLibrary.cmo : public/xString.cmi public/unicodeString.cmi \
+    public/uText.cmi public/uTF8.cmi public/uTF16.cmi public/uSet.cmi \
+    public/uReStr.cmi public/uRe.cmi public/uPervasives.cmi public/uNF.cmi \
+    public/uMap.cmi public/uLine.cmi public/uCol.cmi public/uCharTbl.cmi \
+    public/uCharInfo.cmi public/uChar.cmi public/uCS4.cmi public/subText.cmi \
+    public/stringPrep.cmi public/oOChannel.cmi public/locale.cmi \
+    internal/iSet.cmi internal/iMap.cmi configInt.cmi public/charEncoding.cmi \
+    public/caseMap.cmi camomileDefaultConfig.cmo camomileLibrary.cmi
+camomileLibrary.cmx : public/xString.cmx public/unicodeString.cmi \
+    public/uText.cmx public/uTF8.cmx public/uTF16.cmx public/uSet.cmx \
+    public/uReStr.cmx public/uRe.cmx public/uPervasives.cmx public/uNF.cmx \
+    public/uMap.cmx public/uLine.cmx public/uCol.cmx public/uCharTbl.cmx \
+    public/uCharInfo.cmx public/uChar.cmx public/uCS4.cmx public/subText.cmx \
+    public/stringPrep.cmx public/oOChannel.cmx public/locale.cmx \
+    internal/iSet.cmx internal/iMap.cmx configInt.cmi public/charEncoding.cmx \
+    public/caseMap.cmx camomileDefaultConfig.cmx camomileLibrary.cmi
+camomileLibraryDefault.cmo : camomileLibrary.cmi camomileDefaultConfig.cmo \
+    camomileLibraryDefault.cmi
+camomileLibraryDefault.cmx : camomileLibrary.cmx camomileDefaultConfig.cmx \
+    camomileLibraryDefault.cmi
+camomileLibraryDyn.cmo : camomileLibrary.cmi camomileDefaultConfig.cmo \
+    camomileLibraryDyn.cmi
+camomileLibraryDyn.cmx : camomileLibrary.cmx camomileDefaultConfig.cmx \
+    camomileLibraryDyn.cmi
+camomileLibrary.cmi : internal/iSet.cmi internal/iMap.cmi
+camomileLibraryDefault.cmi : public/xString.cmi public/unicodeString.cmi \
+    public/uText.cmi public/uTF8.cmi public/uTF16.cmi public/uSet.cmi \
+    public/uReStr.cmi public/uRe.cmi public/uPervasives.cmi public/uNF.cmi \
+    public/uMap.cmi public/uLine.cmi public/uCol.cmi public/uCharTbl.cmi \
+    public/uCharInfo.cmi public/uChar.cmi public/uCS4.cmi public/subText.cmi \
+    public/stringPrep.cmi public/oOChannel.cmi public/locale.cmi \
+    configInt.cmi public/charEncoding.cmi public/caseMap.cmi \
+    camomileLibrary.cmi
+camomileLibraryDyn.cmi : public/xString.cmi public/unicodeString.cmi \
+    public/uText.cmi public/uTF8.cmi public/uTF16.cmi public/uSet.cmi \
+    public/uReStr.cmi public/uRe.cmi public/uPervasives.cmi public/uNF.cmi \
+    public/uMap.cmi public/uLine.cmi public/uCol.cmi public/uCharTbl.cmi \
+    public/uCharInfo.cmi public/uChar.cmi public/uCS4.cmi public/subText.cmi \
+    public/stringPrep.cmi public/oOChannel.cmi public/locale.cmi \
+    configInt.cmi public/charEncoding.cmi public/caseMap.cmi \
+    camomileLibrary.cmi
+configInt.cmi :
+internal/avlTree.cmo : internal/avlTree.cmi
+internal/avlTree.cmx : internal/avlTree.cmi
+internal/bitsvect.cmo : internal/bitsvect.cmi
+internal/bitsvect.cmx : internal/bitsvect.cmi
+internal/byte_labeled_dag.cmo : internal/bytesvect.cmi \
+    internal/byte_labeled_dag.cmi
+internal/byte_labeled_dag.cmx : internal/bytesvect.cmx \
+    internal/byte_labeled_dag.cmi
+internal/bytesvect.cmo : internal/bytesvect.cmi
+internal/bytesvect.cmx : internal/bytesvect.cmi
+internal/charmap.cmo : internal/tbl31.cmi internal/database.cmi \
+    configInt.cmi internal/byte_labeled_dag.cmi internal/charmap.cmi
+internal/charmap.cmx : internal/tbl31.cmx internal/database.cmx \
+    configInt.cmi internal/byte_labeled_dag.cmx internal/charmap.cmi
+internal/database.cmo : internal/database.cmi
+internal/database.cmx : internal/database.cmi
+internal/hangul.cmo : public/xString.cmi public/uChar.cmi \
+    internal/hangul.cmi
+internal/hangul.cmx : public/xString.cmx public/uChar.cmx \
+    internal/hangul.cmi
+internal/iMap.cmo : internal/iSet.cmi internal/avlTree.cmi internal/iMap.cmi
+internal/iMap.cmx : internal/iSet.cmx internal/avlTree.cmx internal/iMap.cmi
+internal/iSet.cmo : internal/avlTree.cmi internal/iSet.cmi
+internal/iSet.cmx : internal/avlTree.cmx internal/iSet.cmi
+internal/stringPrep_data.cmo : internal/unidata.cmi public/uCharTbl.cmi \
+    public/uChar.cmi configInt.cmi internal/stringPrep_data.cmi
+internal/stringPrep_data.cmx : internal/unidata.cmx public/uCharTbl.cmx \
+    public/uChar.cmx configInt.cmi internal/stringPrep_data.cmi
+internal/tbl31.cmo : internal/iSet.cmi internal/iMap.cmi \
+    internal/bytesvect.cmi internal/bitsvect.cmi internal/avlTree.cmi \
+    internal/tbl31.cmi
+internal/tbl31.cmx : internal/iSet.cmx internal/iMap.cmx \
+    internal/bytesvect.cmx internal/bitsvect.cmx internal/avlTree.cmx \
+    internal/tbl31.cmi
+internal/uReStrParser.cmo : public/uSet.cmi internal/uReStrParserType.cmi \
+    public/uChar.cmi internal/uReStrParser.cmi
+internal/uReStrParser.cmx : public/uSet.cmx internal/uReStrParserType.cmi \
+    public/uChar.cmx internal/uReStrParser.cmi
+internal/unidata.cmo : public/uCharTbl.cmi public/uChar.cmi \
+    public/locale.cmi internal/database.cmi configInt.cmi \
+    internal/unidata.cmi
+internal/unidata.cmx : public/uCharTbl.cmx public/uChar.cmx \
+    public/locale.cmx internal/database.cmx configInt.cmi \
+    internal/unidata.cmi
+internal/unimap.cmo : internal/tbl31.cmi internal/iMap.cmi \
+    internal/database.cmi configInt.cmi internal/unimap.cmi
+internal/unimap.cmx : internal/tbl31.cmx internal/iMap.cmx \
+    internal/database.cmx configInt.cmi internal/unimap.cmi
+internal/xArray.cmo : internal/xArray.cmi
+internal/xArray.cmx : internal/xArray.cmi
+internal/avlTree.cmi :
+internal/bitsvect.cmi :
+internal/byte_labeled_dag.cmi :
+internal/bytesvect.cmi :
+internal/charmap.cmi : internal/tbl31.cmi configInt.cmi
+internal/database.cmi :
+internal/hangul.cmi : public/xString.cmi public/uChar.cmi
+internal/iMap.cmi : internal/iSet.cmi internal/avlTree.cmi
+internal/iSet.cmi : internal/avlTree.cmi
+internal/stringPrep_data.cmi : public/uCharTbl.cmi public/uChar.cmi \
+    configInt.cmi
+internal/tbl31.cmi : internal/iSet.cmi internal/iMap.cmi
+internal/uReStrParser.cmi : internal/uReStrParserType.cmi public/uChar.cmi
+internal/uReStrParserType.cmi : public/uSet.cmi public/uChar.cmi
+internal/unidata.cmi : public/uCharTbl.cmi public/uChar.cmi configInt.cmi
+internal/unimap.cmi : configInt.cmi
+internal/xArray.cmi :
+public/caseMap.cmo : internal/unidata.cmi public/unicodeString.cmi \
+    public/uCharTbl.cmi public/uCharInfo.cmi public/uChar.cmi \
+    public/locale.cmi configInt.cmi public/caseMap.cmi
+public/caseMap.cmx : internal/unidata.cmx public/unicodeString.cmi \
+    public/uCharTbl.cmx public/uCharInfo.cmx public/uChar.cmx \
+    public/locale.cmx configInt.cmi public/caseMap.cmi
+public/charEncoding.cmo : internal/unimap.cmi public/unicodeString.cmi \
+    public/uChar.cmi internal/tbl31.cmi public/oOChannel.cmi configInt.cmi \
+    internal/charmap.cmi public/charEncoding.cmi
+public/charEncoding.cmx : internal/unimap.cmx public/unicodeString.cmi \
+    public/uChar.cmx internal/tbl31.cmx public/oOChannel.cmx configInt.cmi \
+    internal/charmap.cmx public/charEncoding.cmi
+public/locale.cmo : internal/database.cmi public/locale.cmi
+public/locale.cmx : internal/database.cmx public/locale.cmi
+public/oOChannel.cmo : public/oOChannel.cmi
+public/oOChannel.cmx : public/oOChannel.cmi
+public/stringPrep.cmo : public/unicodeString.cmi public/uNF.cmi \
+    public/uCharTbl.cmi public/uCharInfo.cmi public/uChar.cmi \
+    internal/stringPrep_data.cmi configInt.cmi public/stringPrep.cmi
+public/stringPrep.cmx : public/unicodeString.cmi public/uNF.cmx \
+    public/uCharTbl.cmx public/uCharInfo.cmx public/uChar.cmx \
+    internal/stringPrep_data.cmx configInt.cmi public/stringPrep.cmi
+public/subText.cmo : public/unicodeString.cmi public/uChar.cmi \
+    public/subText.cmi
+public/subText.cmx : public/unicodeString.cmi public/uChar.cmx \
+    public/subText.cmi
+public/uCS4.cmo : public/uChar.cmi public/uCS4.cmi
+public/uCS4.cmx : public/uChar.cmx public/uCS4.cmi
+public/uChar.cmo : public/uChar.cmi
+public/uChar.cmx : public/uChar.cmi
+public/uCharInfo.cmo : internal/unidata.cmi public/uSet.cmi public/uMap.cmi \
+    public/uCharTbl.cmi public/uChar.cmi configInt.cmi public/uCharInfo.cmi
+public/uCharInfo.cmx : internal/unidata.cmx public/uSet.cmx public/uMap.cmx \
+    public/uCharTbl.cmx public/uChar.cmx configInt.cmi public/uCharInfo.cmi
+public/uCharTbl.cmo : public/uSet.cmi public/uMap.cmi public/uChar.cmi \
+    internal/tbl31.cmi public/uCharTbl.cmi
+public/uCharTbl.cmx : public/uSet.cmx public/uMap.cmx public/uChar.cmx \
+    internal/tbl31.cmx public/uCharTbl.cmi
+public/uCol.cmo : public/xString.cmi internal/unidata.cmi \
+    public/unicodeString.cmi public/uNF.cmi public/uCharTbl.cmi \
+    public/uCharInfo.cmi public/uChar.cmi configInt.cmi public/uCol.cmi
+public/uCol.cmx : public/xString.cmx internal/unidata.cmx \
+    public/unicodeString.cmi public/uNF.cmx public/uCharTbl.cmx \
+    public/uCharInfo.cmx public/uChar.cmx configInt.cmi public/uCol.cmi
+public/uLine.cmo : public/unicodeString.cmi public/uChar.cmi \
+    public/oOChannel.cmi public/uLine.cmi
+public/uLine.cmx : public/unicodeString.cmi public/uChar.cmx \
+    public/oOChannel.cmx public/uLine.cmi
+public/uMap.cmo : public/uSet.cmi public/uChar.cmi internal/iMap.cmi \
+    public/uMap.cmi
+public/uMap.cmx : public/uSet.cmx public/uChar.cmx internal/iMap.cmx \
+    public/uMap.cmi
+public/uNF.cmo : public/xString.cmi public/unicodeString.cmi \
+    public/uCharTbl.cmi public/uCharInfo.cmi public/uChar.cmi \
+    public/oOChannel.cmi internal/hangul.cmi configInt.cmi public/uNF.cmi
+public/uNF.cmx : public/xString.cmx public/unicodeString.cmi \
+    public/uCharTbl.cmx public/uCharInfo.cmx public/uChar.cmx \
+    public/oOChannel.cmx internal/hangul.cmx configInt.cmi public/uNF.cmi
+public/uPervasives.cmo : public/uTF8.cmi public/uChar.cmi \
+    public/uPervasives.cmi
+public/uPervasives.cmx : public/uTF8.cmx public/uChar.cmx \
+    public/uPervasives.cmi
+public/uRe.cmo : public/unicodeString.cmi public/uSet.cmi public/uChar.cmi \
+    public/subText.cmi public/uRe.cmi
+public/uRe.cmx : public/unicodeString.cmi public/uSet.cmx public/uChar.cmx \
+    public/subText.cmx public/uRe.cmi
+public/uReStr.cmo : internal/unidata.cmi public/unicodeString.cmi \
+    public/uTF8.cmi public/uSet.cmi internal/uReStrParser.cmi public/uRe.cmi \
+    public/uMap.cmi public/uCharInfo.cmi public/subText.cmi configInt.cmi \
+    public/uReStr.cmi
+public/uReStr.cmx : internal/unidata.cmx public/unicodeString.cmi \
+    public/uTF8.cmx public/uSet.cmx internal/uReStrParser.cmx public/uRe.cmx \
+    public/uMap.cmx public/uCharInfo.cmx public/subText.cmx configInt.cmi \
+    public/uReStr.cmi
+public/uSet.cmo : public/uChar.cmi internal/iSet.cmi public/uSet.cmi
+public/uSet.cmx : public/uChar.cmx internal/iSet.cmx public/uSet.cmi
+public/uTF16.cmo : public/uChar.cmi public/uTF16.cmi
+public/uTF16.cmx : public/uChar.cmx public/uTF16.cmi
+public/uTF8.cmo : public/uChar.cmi public/uTF8.cmi
+public/uTF8.cmx : public/uChar.cmx public/uTF8.cmi
+public/uText.cmo : internal/xArray.cmi public/uChar.cmi public/uText.cmi
+public/uText.cmx : internal/xArray.cmx public/uChar.cmx public/uText.cmi
+public/xString.cmo : internal/xArray.cmi public/uText.cmi public/uChar.cmi \
+    public/xString.cmi
+public/xString.cmx : internal/xArray.cmx public/uText.cmx public/uChar.cmx \
+    public/xString.cmi
+public/caseMap.cmi : public/unicodeString.cmi configInt.cmi
+public/charEncoding.cmi : public/unicodeString.cmi public/uChar.cmi \
+    public/oOChannel.cmi configInt.cmi
+public/locale.cmi :
+public/oOChannel.cmi :
+public/stringPrep.cmi : public/unicodeString.cmi public/uChar.cmi \
+    configInt.cmi
+public/subText.cmi : public/unicodeString.cmi public/uChar.cmi
+public/uCS4.cmi : public/uChar.cmi
+public/uChar.cmi :
+public/uCharInfo.cmi : public/uSet.cmi public/uMap.cmi public/uCharTbl.cmi \
+    public/uChar.cmi configInt.cmi
+public/uCharTbl.cmi : public/uSet.cmi public/uMap.cmi public/uChar.cmi
+public/uCol.cmi : public/unicodeString.cmi configInt.cmi
+public/uLine.cmi : public/unicodeString.cmi public/uChar.cmi \
+    public/oOChannel.cmi
+public/uMap.cmi : public/uSet.cmi public/uChar.cmi internal/iMap.cmi
+public/uNF.cmi : public/xString.cmi public/unicodeString.cmi \
+    public/uChar.cmi public/oOChannel.cmi configInt.cmi
+public/uPervasives.cmi : public/uChar.cmi
+public/uRe.cmi : public/unicodeString.cmi public/uSet.cmi public/uChar.cmi \
+    public/subText.cmi
+public/uReStr.cmi : public/unicodeString.cmi public/uRe.cmi \
+    public/subText.cmi configInt.cmi
+public/uSet.cmi : public/uChar.cmi internal/iSet.cmi
+public/uTF16.cmi : public/uChar.cmi
+public/uTF8.cmi : public/uChar.cmi
+public/uText.cmi : public/uChar.cmi
+public/unicodeString.cmi : public/uChar.cmi
+public/xString.cmi : public/uText.cmi public/uChar.cmi
+mappings/gen_mappings.cmo : internal/unimap.cmi internal/database.cmi \
+    toolslib/camomileconfig.cmo
+mappings/gen_mappings.cmx : internal/unimap.cmx internal/database.cmx \
+    toolslib/camomileconfig.cmx
+toolslib/absCe.cmo : public/xString.cmi internal/xArray.cmi \
+    internal/unidata.cmi public/uMap.cmi public/uCol.cmi public/uCharTbl.cmi \
+    public/uCharInfo.cmi public/uChar.cmi toolslib/toolslib.cmo \
+    toolslib/camomileconfig.cmo toolslib/absOrd.cmi toolslib/absCe.cmi
+toolslib/absCe.cmx : public/xString.cmx internal/xArray.cmx \
+    internal/unidata.cmx public/uMap.cmx public/uCol.cmx public/uCharTbl.cmx \
+    public/uCharInfo.cmx public/uChar.cmx toolslib/toolslib.cmx \
+    toolslib/camomileconfig.cmx toolslib/absOrd.cmx toolslib/absCe.cmi
+toolslib/absOrd.cmo : internal/iSet.cmi toolslib/absOrd.cmi
+toolslib/absOrd.cmx : internal/iSet.cmx toolslib/absOrd.cmi
+toolslib/camomileconfig.cmo :
+toolslib/camomileconfig.cmx :
+toolslib/toolslib.cmo : internal/unimap.cmi internal/unidata.cmi \
+    internal/charmap.cmi toolslib/camomileconfig.cmo
+toolslib/toolslib.cmx : internal/unimap.cmx internal/unidata.cmx \
+    internal/charmap.cmx toolslib/camomileconfig.cmx
+toolslib/absCe.cmi : internal/unidata.cmi public/uCol.cmi public/uChar.cmi \
+    toolslib/toolslib.cmo
+toolslib/absOrd.cmi : internal/iSet.cmi
+tools/parse_uniset.cmo : public/uSet.cmi public/uCharTbl.cmi \
+    public/uChar.cmi internal/database.cmi
+tools/parse_uniset.cmx : public/uSet.cmx public/uCharTbl.cmx \
+    public/uChar.cmx internal/database.cmx
+tools/camomilecharmap.cmo : toolslib/toolslib.cmo internal/tbl31.cmi \
+    internal/iMap.cmi internal/database.cmi internal/charmap.cmi
+tools/camomilecharmap.cmx : toolslib/toolslib.cmx internal/tbl31.cmx \
+    internal/iMap.cmx internal/database.cmx internal/charmap.cmx
+tools/parse_specialcasing.cmo : internal/unidata.cmi public/uMap.cmi \
+    public/uCharTbl.cmi public/uCharInfo.cmi public/uChar.cmi \
+    internal/database.cmi toolslib/camomileconfig.cmo
+tools/parse_specialcasing.cmx : internal/unidata.cmx public/uMap.cmx \
+    public/uCharTbl.cmx public/uCharInfo.cmx public/uChar.cmx \
+    internal/database.cmx toolslib/camomileconfig.cmx
+tools/parse_casefolding.cmo : internal/unidata.cmi public/uMap.cmi \
+    public/uCharTbl.cmi public/uChar.cmi internal/database.cmi
+tools/parse_casefolding.cmx : internal/unidata.cmx public/uMap.cmx \
+    public/uCharTbl.cmx public/uChar.cmx internal/database.cmx
+tools/parse_scripts.cmo : internal/unidata.cmi public/uMap.cmi \
+    public/uCharTbl.cmi public/uChar.cmi internal/database.cmi \
+    toolslib/camomileconfig.cmo
+tools/parse_scripts.cmx : internal/unidata.cmx public/uMap.cmx \
+    public/uCharTbl.cmx public/uChar.cmx internal/database.cmx \
+    toolslib/camomileconfig.cmx
+tools/parse_allkeys.cmo : internal/unidata.cmi public/uChar.cmi \
+    toolslib/toolslib.cmo internal/database.cmi toolslib/absCe.cmi
+tools/parse_allkeys.cmx : internal/unidata.cmx public/uChar.cmx \
+    toolslib/toolslib.cmx internal/database.cmx toolslib/absCe.cmx
+mappings/gen_mappings.cmo : internal/unimap.cmi internal/database.cmi \
+    toolslib/camomileconfig.cmo
+mappings/gen_mappings.cmx : internal/unimap.cmx internal/database.cmx \
+    toolslib/camomileconfig.cmx
+tools/parse_age.cmo : public/uMap.cmi public/uCharTbl.cmi public/uChar.cmi \
+    internal/database.cmi
+tools/parse_age.cmx : public/uMap.cmx public/uCharTbl.cmx public/uChar.cmx \
+    internal/database.cmx
+tools/camomilelocaledef.cmo : internal/unidata.cmi public/uTF8.cmi \
+    public/uNF.cmi public/uCharInfo.cmi public/uChar.cmi \
+    toolslib/toolslib.cmo internal/database.cmi public/charEncoding.cmi \
+    toolslib/camomileconfig.cmo toolslib/absCe.cmi
+tools/camomilelocaledef.cmx : internal/unidata.cmx public/uTF8.cmx \
+    public/uNF.cmx public/uCharInfo.cmx public/uChar.cmx \
+    toolslib/toolslib.cmx internal/database.cmx public/charEncoding.cmx \
+    toolslib/camomileconfig.cmx toolslib/absCe.cmx
+tools/camomilestringprep.cmo : public/uSet.cmi public/uMap.cmi \
+    public/uCharTbl.cmi public/uChar.cmi internal/stringPrep_data.cmi \
+    internal/database.cmi
+tools/camomilestringprep.cmx : public/uSet.cmx public/uMap.cmx \
+    public/uCharTbl.cmx public/uChar.cmx internal/stringPrep_data.cmx \
+    internal/database.cmx
